@@ -8,6 +8,6 @@ RUN git clone --depth=1 https://github.com/rajputakhil/ludwig.git \
     && python -m spacy download en \
     && python setup.py install
 
-WORKDIR /my-ml-files
+WORKDIR /data
 
 ENTRYPOINT ["ludwig"]
